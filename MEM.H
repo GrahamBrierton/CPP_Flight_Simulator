@@ -1,0 +1,14 @@
+extern matrix mat3d(void);
+extern airport airport_mem(void);
+extern airport *allocate_airport_mem(int);
+extern extent extent_3d(void);
+extern extent *allocate_extent_mem(int);
+extern shape shape_3d(void);
+extern shape *allocate_shape_mem(int);
+extern vertices *allocate_vert_mem(int);
+extern vertices vert_3d(void);
+extern facelist *allocate_face_mem(int);
+extern facelist face_3d(void);
+extern nav allocate_nav_mem(void);
+extern plane allocate_plane_mem(void);
+extern environment allocate_environment_mem(void);

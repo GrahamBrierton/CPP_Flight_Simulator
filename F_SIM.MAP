@@ -1,0 +1,48 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 03F13H 03F14H _TEXT              CODE
+ 03F14H 04111H 001FEH _DATA              DATA
+ 04112H 04115H 00004H _BSS               BSS
+
+Error: Undefined symbol FIWRQQ in module F_SIM.CPP
+Error: Undefined symbol FIDRQQ in module F_SIM.CPP
+Error: Undefined symbol _TAN in module F_SIM.CPP
+Error: Undefined symbol _BIOSKEY in module F_SIM.CPP
+Error: Undefined symbol _SETPALETTE in module F_SIM.CPP
+Error: Undefined symbol _SETACTIVEPAGE in module F_SIM.CPP
+Error: Undefined symbol _FCLOSE in module F_SIM.CPP
+Error: Undefined symbol _FOPEN in module F_SIM.CPP
+Error: Undefined symbol _INITGRAPH in module F_SIM.CPP
+Error: Undefined symbol _MALLOC in module F_SIM.CPP
+Error: Undefined symbol N_SCOPY@ in module F_SIM.CPP
+Error: Undefined symbol _PUTPIXEL in module F_SIM.CPP
+Error: Undefined symbol _FGETC in module F_SIM.CPP
+Error: Undefined symbol _EXIT in module F_SIM.CPP
+Error: Undefined symbol _PRINTF in module F_SIM.CPP
+Error: Undefined symbol _SETVISUALPAGE in module F_SIM.CPP
+Error: Undefined symbol _FREE in module F_SIM.CPP
+Error: Undefined symbol _OUTTEXTXY in module F_SIM.CPP
+Error: Undefined symbol _SPRINTF in module F_SIM.CPP
+Error: Undefined symbol _CLEARVIEWPORT in module F_SIM.CPP
+Error: Undefined symbol _SETVIEWPORT in module F_SIM.CPP
+Error: Undefined symbol _COS in module F_SIM.CPP
+Error: Undefined symbol _SIN in module F_SIM.CPP
+Error: Undefined symbol N_FTOL@ in module F_SIM.CPP
+Error: Undefined symbol _FSCANF in module F_SIM.CPP
+Error: Undefined symbol _SETCOLOR in module F_SIM.CPP
+Error: Undefined symbol _SQRT in module F_SIM.CPP
+Error: Undefined symbol _SETFILLSTYLE in module F_SIM.CPP
+Error: Undefined symbol _LINE in module F_SIM.CPP
+Error: Undefined symbol _ASIN in module F_SIM.CPP
+Error: Undefined symbol _FILLPOLY in module F_SIM.CPP
+Error: Undefined symbol _PIESLICE in module F_SIM.CPP
+Error: Undefined symbol _BAR in module F_SIM.CPP
+Error: Undefined symbol _CALLOC in module F_SIM.CPP
+Error: Undefined symbol _GETTIME in module F_SIM.CPP
+Error: Undefined symbol hsub3(int,char,char,int) in module F_SIM.CPP
+Error: Undefined symbol hsub2(int,char,char) in module F_SIM.CPP
+Error: Undefined symbol hsub1(int,char) in module F_SIM.CPP
+Program entry point at 0000:0000
+Warning: No stack
+

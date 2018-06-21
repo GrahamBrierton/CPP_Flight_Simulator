@@ -1,0 +1,15 @@
+extern char*edit_filename(char*);
+extern char*get_dir(int);
+extern void draw_select_box(int);
+extern void show_dir(char[100][13],int);
+extern int getfilename(int);
+extern int getmode();
+extern void getfileinfo(char[100][13],int*);
+extern void edit_pathname();
+extern char*editfilename(char*);
+void edit_string(char[],int,int,int);
+int update_path(char[]);
+void display_error(char*,int);
+int disk_ok(int);
+int harderror_handler(int,int,int,int);
+

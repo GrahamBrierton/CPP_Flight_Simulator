@@ -1,0 +1,168 @@
+#ifndef D_TO_R
+#define D_TO_R 57.29575
+#endif
+
+#ifndef UNDERFLOW
+#define UNDERFLOW 0.001
+#endif
+
+#ifndef MAXFUEL
+#define MAXFUEL 4000
+#endif
+
+#ifndef MAXRPM
+#define MAXRPM 4000
+#endif
+
+#ifndef ON
+#define ON 1
+#endif
+
+#ifndef OFF
+#define OFF 0
+#endif
+
+#ifndef UP
+#define UP     18432
+#endif
+
+#ifndef LEFT
+#define LEFT   19200
+#endif
+
+#ifndef RIGHT
+#define RIGHT  19712
+#endif
+
+#ifndef DOWN
+#define DOWN   20480
+#endif
+
+
+struct vertex
+{
+  float x;
+  float y;
+  float z;
+};
+typedef struct vertex VERTEX;
+typedef VERTEX *vertices;
+
+struct face_def
+{
+  float no_of_verts;
+  float verts[30];
+  float nx,ny,nz;
+};
+
+typedef struct face_def FACE;
+typedef FACE *facelist;
+
+struct test_def
+{
+  int no_of_test;
+/*  int sides[20];*/
+};
+
+typedef struct test_def TEST_DEF;
+typedef TEST_DEF *testlist;
+
+struct mat
+{
+ float entry[4][3];
+} ;
+
+typedef struct mat MATRIX;
+typedef MATRIX *matrix;
+
+struct shape_def
+{
+ float start_poly,end_poly;
+ float scale_x,scale_y,scale_z;
+ float x_dir,y_dir,z_dir;
+ float y_rot,x_rot,z_rot;
+ float curr_y_angle,curr_z_angle,curr_x_angle;
+ float wx,wy,wz;
+ float color;
+ float fill;
+ float extent_no;
+ float detail_level;
+ float day_color;
+ float night_color;
+ matrix shape_mat;
+};
+
+typedef struct shape_def SHAPE;
+typedef SHAPE *shape;
+
+struct extents_def
+{
+ float coord[5][2];
+ int clip;
+};
+typedef struct extents_def EXTENT;
+typedef EXTENT *extent;
+
+struct plane_stats
+{
+ float dxn,dyn,dzn;
+ float dxup,dyup,dzup;
+ float view_x,view_y,view_z;
+ float view_alt;
+ float gear;
+ float flaps;
+ float speed;
+ float acceleration;
+ float fuel;
+ float thrust;
+ float available_thrust;
+ float aoa_drag;
+ float drag;
+ float lift;
+ float rot;
+ float dive_angle;
+ float bank_angle;
+ float rudder;
+ float brakes;
+ };
+
+typedef struct plane_stats PLANE;
+typedef PLANE *plane;
+
+struct nav_stats
+{
+ float ns;
+ float ew;
+ float alt;
+ float no_of_beacons;
+ float beacon_coords[20];
+ float nav2,nav1;
+ float omi_radial;
+};
+
+typedef struct nav_stats NAV;
+typedef NAV *nav;
+
+struct airport_def
+{
+ char *airport_name;
+ float ns_coord;
+ float ew_coord;
+};
+
+typedef struct airport_def AIRPORT;
+typedef AIRPORT *airport;
+
+struct environment_def
+{
+  int season;
+};
+typedef struct environment_def ENVIRON;
+typedef ENVIRON *environment;
+
+
+extern void initialize_plane(plane);
+
+
+
+

@@ -1,0 +1,24 @@
+extern void mtranslate_3d(matrix,float,float,float);
+extern void mrotx3d(matrix,float,float);
+extern void mroty3d(matrix,float,float);
+extern void mrotz3d(matrix,float,float);
+extern void scale(matrix,float,float,float);
+extern void angle_to_coord(float*,float*,float);
+extern float get_slope(float,float,float,float);
+extern float coord_to_angle(float,float,float,float);
+extern float line_length(float,float,float,float);
+extern float quick_tan(float);
+extern float quick_cos(float);
+extern float quick_sin(float);
+extern void set_cos_table(void);
+extern void set_sin_table(void);
+extern void set_tan_table(void);
+extern void initialise_matrix(matrix);
+extern float round_error(float);
+extern void convert_3d_to_2d(int,float*,float*,float,float*,float*,float);
+extern float max (float value1, float value2);
+extern float min (float value1,float value2);
+
+
+
+
